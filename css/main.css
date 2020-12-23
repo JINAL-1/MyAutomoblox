@@ -1,0 +1,277 @@
+ 
+ @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+ 
+
+
+  /* Global Styling*/
+  
+  :root {
+	--colour: #eef0f2;
+	--colour1: #db3f10;
+	--colour2:  rgba(218,15,15,1) ;
+	--colour3: #9df184;
+	--colour4: #bbec35;
+	--font1:'Karla', sans-serif;
+  }
+
+  @font-face {
+	font-family: 'Raleway';
+	src: url('../font/raleway-light-webfont.woff2') format('woff2'),
+	 url('../font/raleway-light-webfont.woff') format('woff'),
+	 url('../font/raleway-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;	
+  }
+
+  *{
+	padding: 0px;
+	margin: 0px;
+  }
+  
+  h1, h2, h3 , h4, h5, h6{
+	font-family: var(--font1);
+	font-size: 20px;
+  
+  }
+  
+  p{
+	font-family: Raleway;
+  
+	font-size: 16px;
+  }
+  
+  /* Navigation Styling*/
+  #navigationBar{
+	 /* margin-top: 5px;
+	  padding-top: 10px;*/
+	  height: 70px;
+	  background-image: linear-gradient( 99deg,  rgba(255,166,0,1) 14.7%, rgba(255,99,97,1) 73% );
+  }
+  
+  #navigationBar img{
+	  height: 55px;
+  }
+  
+  .nav-link,
+  .nav-item{
+	color: darkslategray;
+	font-weight: bold;
+	font-family:var(--font1);
+	/*'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+	*/
+  }
+
+ /* #globalnav > .nav-item:active{
+    color: olivedrab;
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }*/
+
+  #globalnav> ul> #active,  #globalnav> ul> li > .nav-link:hover {
+    background-color:var(--colour4) !important;
+    color: var(--colour1) !important;
+  }
+
+/*Social icons and Social Navbar*/
+/* Reference : Adding a sticky vertical Social Media Bar https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp*/
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: var(--colour);
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .content {
+	margin-left: 75px;
+	font-size: 30px;
+  }
+  /* Carousel styling */
+
+  #carousel-cars{
+	  padding: 75px;
+  }
+
+  /*.carousel-indicators {
+    bottom: -50px;
+	background-color: yellow;
+}
+
+/*.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+  }*/
+
+  /* Indicators list style */
+.carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+.carousel-inner > .carousel-item > .carousel-caption{
+	padding: 25px;
+}
+
+.space{
+	height:125px;
+}
+.carousel-inner > .carousel-item > .carousel-caption > p
+{
+	float: right;
+	padding-top: 268px;
+	padding-left:45px
+	}
+
+	.carousel-inner > .carousel-item > .carousel-caption >p> button{
+     background:var(--colour2) !important;
+     padding: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+.carousel-indicators {
+	bottom: -20px;
+  }
+  
+  .carousel-indicators li {
+	background-color: var(--colour3) !important;
+  }
+
+  .zoomit {
+    animation: zoom-in-out 0.5s;
+  }
+
+
+  @keyframes zoom-in-out {
+    from {
+      transform: none;
+    }
+    50% {
+      transform: scale(1.4);
+      transform-origin: center top;
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  /* Card Styling */
+
+  .cardpanel{
+	  padding: 65px;
+  }
+
+/*Accordion Styling*/
+
+.checked{
+	color: yellow;
+}
+
+.card-header > h2 > button > span
+  {
+    float: right;
+  }
+
+  .card-header> h2> button,
+  .card-body>a>small{
+	  color: var(--colour2) !important;
+  }
+
+  .card-link{
+	  color: var(--colour1);
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	  background-color: var(--colour1);
+  }
+
+  #checkOut{
+    background-color: var(--colour1);
+  }
+  footer{
+	padding-top: 100px;
+	text-align: center;
+	bottom: 0px;
+}
+
+footer > p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+}

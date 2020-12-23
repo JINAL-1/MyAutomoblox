@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Automoblox</title>
+
+    <!-- adv css linked-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+
+    <!-- link to bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+    <!-- link to own css files-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- adding an icon for the title-->
+    <link rel="shortcut icon" href="img/icon.gif" type="img/x-icon">
+    <link rel="icon" href="img/icon.gif" type="img/x-icon">
+</head>
+<body>
+<header>
+ <nav class="navbar navbar-expand-xl  fixed-top" id="navigationBar">
+      
+        <a class="navbar-brand" href="index.html">
+          <img src="img/automoblox_logo.png"  alt="nav logo">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-target="#globalnav" data-toggle="collapse" >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+      <div class="navbar-collapse collapse" id="globalnav">
+        <ul class="navbar-nav navbar-expand-md nav-fill mr-auto">
+         
+          <li class="nav-item" id="active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Activities</a>
+          </li>
+
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cars.html">Trending Cars</a>
+                <a class="dropdown-item" href="cars.html">Hot Deals</a>
+                <a class="dropdown-item" href="cars.html">Book your Car from Upcoming Arrivals</a>
+          </div><!-- .dropdown-menu-->
+          </li><!--  .nav-item dropdown  -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+            
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Join the Club</a>
+          </li>
+
+        </ul><!-- .navbar-nav -->
+
+       </div><!--  .collapse navbar-collapse  -->
+    </nav><!--- #navigationBar-->
+</header>
+      
+    
+    <main >
+
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div><!-- .icon-bar-->
+
+<section class="container">
+      <div id="carousel-cars" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-cars" data-slide-to="0"><img src="img/a9_small.jpg" alt="c9" /></li>
+          <li data-target="#carousel-cars" data-slide-to="1"><img src="img/x9_small.jpg" alt="t9" /></li>
+          <li data-target="#carousel-cars" data-slide-to="2"><img src="img/t9_small.jpg" alt="s9" /></li>
+          <li data-target="#carousel-cars" data-slide-to="3"><img src="img/s9_small.jpg" alt="x9" /></li>
+          <li data-target="#carousel-cars" data-slide-to="4"><img src="img/c9s_small.jpg" alt="c9s" /></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <figure class="carousel-item active">
+            <img src="img/a9_large.jpg" class="rounded mx-auto d-block" id="largeImg" alt="a9 orange" />
+            <figcaption class="carousel-caption">
+              <article class="space"></article>
+               <p> <button onclick="document.location='cars.html'">Play with A9 Now</button></p></figcaption>
+          </figure>
+          <!-- .carousel-item active-->
+
+            <figure class="carousel-item">
+              <img src="img/x9_large.jpg" class="rounded mx-auto d-block" alt="x9 purple" />
+              <figcaption class="carousel-caption">
+                <article class="space"></article>
+                <p><button onclick="document.location='cars.html'">Play with X9 Now</button></p>
+              </figcaption>
+            </figure>
+            <!-- .carousel-item-->
+
+            <figure class="carousel-item">
+              <img src="img/t9_large.jpg" class="rounded mx-auto d-block" alt="t9 green" />
+              <figcaption class="carousel-caption">
+                <article class="space"></article>
+                 <p><button onclick="document.location='cars.html'">Play with T9 Now</button></p></figcaption>
+            </figure>
+            <!-- .carousel-item-->
+
+            <figure class="carousel-item">
+              <img src="img/s9_large.jpg" class="rounded mx-auto d-block" alt="s9 blue" />
+              <figcaption class="carousel-caption">
+                <article class="space"></article>
+                  <p><button onclick="document.location='cars.html'">Play with S9 Now</button></p>
+              </figcaption>
+            </figure>
+            <!-- .carousel-item-->
+
+            <figure class="carousel-item">
+              <img src="img/c9s_large.jpg" class="rounded mx-auto d-block" alt="c9s spaceown" />
+              <figcaption class="carousel-caption">
+                <article class="space"></article>
+               <p><button onclick="document.location='cars.html'">Play with C9S Now</button></p>
+              </figcaption>
+            </figure>
+            <!-- .carousel-item-->
+
+            </div>
+            <!--.carousel-inner-->
+         </div>
+        <!-- .carousel slide-->
+
+        <!-- End Carousel-->
+
+   <!-- Cards --- Information -->
+<section class="cardpanel" id="panel">
+  <h4>Information</h4>
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="true">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-news-tab" data-toggle="pill" href="#pills-news" role="tab" aria-controls="pills-news" aria-selected="false">About Publisher</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-works-tab" data-toggle="pill" href="#pills-works" role="tab" aria-controls="pills-works" aria-selected="false">How it works</a>
+  </li>
+
+ </ul>
+
+<div class="tab-content" id="pills-tabContent">
+  
+  <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+   <aside class="card" id="card-about" >
+    <article class="card-body">
+       <h5 class="card-title">About Us</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Automoblox Knowledge</h6>
+      <p class="card-text">The 2x4 axle was braked by the F-450! The four wheel drive, vocational Detroit crashed. Once the hand truck manufactured the lift kit. The mechanic trucked the galvanized body length. The van manufactured the aluminum biodiesel.</p>
+      <a href="#" class="card-link">Learn More</a>
+    </article><!--.card-body-->
+ </aside><!-- .card -->
+ </div><!--#pills-about-->
+
+ <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
+  <aside class="card" id="card-news" >
+   <article class="card-body">
+      <h5 class="card-title">News</h5>
+     <h6 class="card-subtitle mb-2 text-muted">Automoblox - What's New</h6>
+     <p class="card-text">nonprofit newsroom cafe anonymity backpack journalist process vs. product Marshall McLuhan API monetization, CNN leaves it there recontextualize Gawker cops beat Article Skimmer Jeff Jarvis The Daily, digital first WordPress future MinnPost Walter Cronkite died for your sins I love the Weather & Opera section. gotta grok it before you rock it AP Django Instagram Lucius Nieman mathewi masthead Reuters Josh Marshall, he said she said Pictures of Goats section David Cohn kitchen table of the future Marshall McLuhan MinnPost community social media optimization YouTube, people formerly known as the audience the notional night cops reporter in Des Moines cops beat every dog loves food copyboy Julian Assange West Seattle Blog.</p>
+     <a href="#" class="card-link">Check out more on News</a>
+   </article><!--.card-body-->
+</aside><!-- .card -->
+</div><!--#pills-news-->
+
+<div class="tab-pane fade" id="pills-works" role="tabpanel" aria-labelledby="pills-works-tab">
+  <aside class="card" id="card-works" >
+   <article class="card-body">
+      <h5 class="card-title">How it works?</h5>
+     <h6 class="card-subtitle mb-2 text-muted">Automoblox - How does it work?</h6>
+     <p class="card-text">The heavy duty glass body was fixed by the flex fuel therefore once the glass body fixed the trailer? The upfitted, diesel TranStar 8600 dumped. The stabilizer bar deconstructed the mechanical motor when the truck stop constructed the work-ready upfitted cargo van. Once the contractor body decelerated the dump body and the 4WD manufactured the steel van. The landscape dump manufactured the mechanical pickup? The tough, durable cutaway van throttled. The 2x4, mechanical welder body manufactured.</p>
+     <a href="#" class="card-link">Learn More</a>
+   </article><!--.card-body-->
+</aside><!-- .card -->
+</div><!--#pills-works-->
+   
+</div>
+</section><!-- .cardpanel-->
+<!-- End Cards Information-->
+
+<!-- Accordion Component-->
+<div class="accordion" id="accordionExample">
+  <div class="card">
+      <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Review by Lorem
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </button>
+          </h2>
+      </div><!-- .card-header-->
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+        <br><br>
+         <a href="cars.html">
+           <small>Add your review here</small>
+        </a>
+        </div><!-- .card-body-->
+      </div><!-- .collapse show-->
+  </div>  <!-- .card -->    
+                
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Review by Ipsum
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </button>
+        </h2>
+    </div><!-- .card-header-->
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. 
+        <br><br>
+        <a href="cars.html">
+          <small>Add your review here</small>
+       </a>
+      </div><!-- .card-body-->
+    </div><!-- .collapse show-->
+</div>  <!-- .card -->          
+  
+<div class="card">
+  <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Review by Dummy
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </button>
+      </h2>
+  </div><!-- .card-header-->
+
+  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+    <div class="card-body">
+      Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
+
+      <br><br>
+      <a href="cars.html">
+        <small>Add your review here</small>
+     </a>
+    </div><!-- .card-body-->
+  </div><!-- .collapse show-->
+</div>  <!-- .card --> 
+
+</div><!-- .accordion -->
+</section>
+<!-- .container-->
+</main>
+
+<footer>
+  <p>
+   Created by Jinal Parekh 200442270&REG;
+    Updated 2020 &copy;
+  </p>
+</footer>
+
+<!-- attach main.js -->
+
+<script src="main.js"></script>
+<!-- attaching bootstrap javascript-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>
